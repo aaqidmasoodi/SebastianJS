@@ -1,7 +1,25 @@
-// Arrow functions
+// STEP 1: SELECT IT
+const button = document.getElementById('login-btn')
 
-// you will take an array with numbers and sum it up using a loop
+// SELECT THE BOX
+const box = document.getElementById('box-container')
 
-const grades = [95.6, 99.6, 85.6, 33.5, 68.5, 80.5]
 
-// your job is to sum it up
+// THE FUNCTION THAT IS SUPPOSED TO BE RUN WHEN THE BTN IS CLICKED
+// ADD AN EVENT LISTENING
+//                                ---this function is called
+// THIS IS THE MOST
+
+// DO NOT USE CHAT GPT - Research!
+
+let currentColor = "red"
+button.addEventListener('click', () => {
+    if (currentColor === "red") {
+        currentColor = "purple"
+    } else {
+        currentColor = "red"
+    }
+    box.style.backgroundColor = currentColor
+})
+
+console.log(button)
